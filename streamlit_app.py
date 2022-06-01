@@ -131,4 +131,8 @@ create_premade_layout('pie-layout-1', 'https://node-api.flipsidecrypto.com/api/v
 """    
 
  
-   
+df = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+
+st.dataframe(df.style.highlight_max(axis=0))
