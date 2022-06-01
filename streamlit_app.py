@@ -95,7 +95,7 @@ def create_premade_layout(layout, data_link, type = ''):
 
 
 df = pd.DataFrame(
-    np.random.randn(50, 20),
-    columns=('col %d' % i for i in range(20)))
+    (1,2),(123,89)
+    columns=('col %d' % i for i in range(2)))
 
 st.dataframe(df)  # Same as st.write(df)
