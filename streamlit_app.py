@@ -94,8 +94,6 @@ def create_premade_layout(layout, data_link, type = ''):
         st.plotly_chart(fig, use_container_width=True)
 
 
-df = pd.DataFrame(
-    ([[2,6],[7,14]]),
-    columns=('col %d' % i for i in range(2)))
-
+df = pd.DataFrame(np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]),
+                   columns=['a', 'b', 'c'])
 st.dataframe(df)  # Same as st.write(df)
