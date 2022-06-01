@@ -94,7 +94,6 @@ def create_premade_layout(layout, data_link, type = ''):
         st.plotly_chart(fig, use_container_width=True)
 
 
- 
 df = pd.DataFrame(
     np.random.randn(50, 20),
     columns=('col %d' % i for i in range(20)))
