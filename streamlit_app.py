@@ -96,4 +96,4 @@ def create_premade_layout(layout, data_link, type = ''):
 
 df = pd.DataFrame(np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [1,6,9]]),
                    columns=['a', 'b', 'c'])
-st.dataframe(df.style.highlight_max(axis=0))  # Same as st.write(df)
+st.dataframe(df.style.background_gradient(axis=None, vmin=1, vmax=5, cmap="YlGnBu"))  # Same as st.write(df)
