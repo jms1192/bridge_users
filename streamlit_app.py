@@ -343,23 +343,24 @@ final_data_list2 = sorted(final_data_list2, key=lambda  x:(x['BIG_CATEGORY']), r
 
 ## make diffrent graph 
 
+
 restructure_group_dict2 = {}
 final_data_list3 = []
 for x in full_volume_list:
     if x['VOLUME'] == None:
         x['VOLUME'] = 0
-    if not x['BRIDGE'] in restructure_group_dict:
-        restructure_group_dict[x['BRIDGE']] = {x['CHAIN']:x['VOLUME']}
+    if not x['BRIDGE'] in restructure_group_dict2:
+        restructure_group_dict2[x['BRIDGE']] = {x['CHAIN']:x['VOLUME']}
     else:
-        if not x['CHAIN'] in restructure_group_dict[x['BRIDGE']]:
-            restructure_group_dict[x['BRIDGE']][x['CHAIN']] = x['VOLUME']
+        if not x['CHAIN'] in restructure_group_dict2[x['BRIDGE']]:
+            restructure_group_dict2[x['BRIDGE']][x['CHAIN']] = x['VOLUME']
         else:
-            restructure_group_dict[x['BRIDGE']][x['CHAIN']] = restructure_group_dict[x['BRIDGE']][x['CHAIN']] + x['VOLUME']
+            restructure_group_dict2[x['BRIDGE']][x['CHAIN']] = restructure_group_dict2[x['BRIDGE']][x['CHAIN']] + x['VOLUME']
 
-for x in restructure_group_dict.keys():
-    for y in restructure_group_dict[x].keys():
-        final_dict = {'DAY':x, 'ASSET':y, 'SWAP_VOLUME': restructure_group_dict[x][y]}
-        final_dict3 = {'BIG_CATEGORY':x, 'SMALL_CATEGORY':y, 'VALUE': restructure_group_dict[x][y]}
+for x in restructure_group_dict2.keys():
+    for y in restructure_group_dict2[x].keys():
+        final_dict = {'DAY':x, 'ASSET':y, 'SWAP_VOLUME': restructure_group_dict2[x][y]}
+        final_dict3 = {'BIG_CATEGORY':x, 'SMALL_CATEGORY':y, 'VALUE': restructure_group_dict2[x][y]}
         
         final_data_list3.append(final_dict3)
 
