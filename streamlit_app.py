@@ -317,7 +317,8 @@ for api in volume_api_list:
 
 #### start here turn volume list to graph list  
 restructure_group_dict = {}
-final_data_list = []
+final_data_list1 = []
+final_data_list2 = []
 for x in full_volume_list:
     if x['VOLUME'] == None:
         x['VOLUME'] = 0
@@ -332,10 +333,12 @@ for x in full_volume_list:
 for x in restructure_group_dict.keys():
     for y in restructure_group_dict[x].keys():
         final_dict = {'DAY':x, 'ASSET':y, 'SWAP_VOLUME': restructure_group_dict[x][y]}
-        final_data_list.append(final_dict)
+        final_dict2 = {'BIG_CATEGORY':x, 'SMALL_CATEGORY':y, 'VALUE': restructure_group_dict[x][y]}
+        final_data_list1.append(final_dict)
+        final_data_list2.append(final_dict2)
+
 final_data_list= sorted(final_data_list, key=lambda  x:(x['ASSET'], x['DAY'])) 
+print(final_data_list)
 
-
-#create_premade_layout('2d-layout-1', final_data_list)
-
-create_premade_layout('pie-layout-1', final_data_list)
+##create_premade_layout('2d-layout-1', final_data_list)
+create_premade_layout('pie-layout-1', final_data_list2)
