@@ -354,7 +354,7 @@ for x in full_volume_list:
         if not x['CHAIN'] in restructure_group_dict[x['BRIDGE']]:
             restructure_group_dict[x['BRIDGE']][x['CHAIN']] = x['VOLUME']
         else:
-            restructure_group_dict[x['BRIDGE']][x['CHAIN']] = restructure_group_dict[x['DAY']][x['CHAIN']] + x['VOLUME']
+            restructure_group_dict[x['BRIDGE']][x['CHAIN']] = restructure_group_dict[x['BRIDGE']][x['CHAIN']] + x['VOLUME']
 
 for x in restructure_group_dict.keys():
     for y in restructure_group_dict[x].keys():
