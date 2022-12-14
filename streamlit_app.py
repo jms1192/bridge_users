@@ -341,5 +341,5 @@ final_data_list= sorted(final_data_list, key=lambda  x:(x['ASSET'], x['DAY']))
 final_data_list2 = sorted(final_data_list2, key=lambda  x:(x['BIG_CATEGORY']), reverse=True) 
 #print(final_data_list)
 
-create_premade_layout('2d-layout-1', final_data_list)
+create_premade_layout('2d-layout-1', final_data_list1)
 create_premade_layout('pie-layout-1', final_data_list2)
