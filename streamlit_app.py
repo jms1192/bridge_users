@@ -337,7 +337,7 @@ for x in restructure_group_dict.keys():
         final_data_list1.append(final_dict)
         final_data_list2.append(final_dict2)
 
-final_data_list= sorted(final_data_list, key=lambda  x:(x['ASSET'], x['DAY'])) 
+final_data_list1 = sorted(final_data_list1, key=lambda  x:(x['ASSET'], x['DAY'])) 
 final_data_list2 = sorted(final_data_list2, key=lambda  x:(x['BIG_CATEGORY']), reverse=True) 
 #print(final_data_list)
 
