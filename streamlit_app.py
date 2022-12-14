@@ -332,7 +332,7 @@ for x in restructure_group_dict.keys():
     for y in restructure_group_dict[x].keys():
         final_dict = {'DAY':x, 'ASSET':y, 'SWAP_VOLUME': restructure_group_dict[x][y]}
         final_data_list.append(final_dict)
-
+ final_data_list= sorted(final_data_list, key=lambda  x:(x['ASSET'], x['DAY'])) 
 
 
 create_premade_layout('2d-layout-1', final_data_list)
