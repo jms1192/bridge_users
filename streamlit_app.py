@@ -368,7 +368,7 @@ for x in restructure_group_dict2.keys():
 
 """
 # Cross Chain Bridge Volume Metrics 
-
+Welcome to our on-chain analysis dashboard! In this dashboard, you can view the weekly transfer volume of assets on the cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps. Additionally, you can see the breakdown of each bridge's weekly transfer volume by the chain where the bridge originated.
 """
 
 create_premade_layout('2d-layout-1', final_data_list1)
