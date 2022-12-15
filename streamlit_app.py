@@ -371,13 +371,30 @@ for x in restructure_group_dict2.keys():
 
 """
 
-
 create_premade_layout('2d-layout-1', final_data_list1)
 """
 ### Description  
-The graph above shows the weekly transfer volume of assets on the cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
+The graphs above shows the weekly transfer volume USD of assets on the cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
 
 """
 
 create_premade_layout('pie-layout-1', final_data_list3)
+"""
+### Description  
+The graph above shows the weekly transfer volume of assets broken down by cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
+
+"""
+
 create_premade_layout('pie-layout-1', final_data_list2)
+"""
+### Description  
+The graph above shows the weekly transfer volume of each bridge broken down by the chain where the bridge strated. 
+
+"""
+
+
+
+
+
+
+
