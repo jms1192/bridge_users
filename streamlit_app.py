@@ -236,6 +236,8 @@ final_data_list1 = sorted(final_data_list1, key=lambda  x:(x['ASSET'], x['DAY'])
 
 create_premade_layout('2d-layout-1', final_data_list1)
 
+create_premade_layout('2d-layout-1', final_data_list1)
 
+create_premade_layout('2d-layout-1', final_dict2)
 
 
