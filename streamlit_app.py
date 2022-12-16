@@ -256,14 +256,13 @@ for x in restructure_group_dict2.keys():
         final_data_list3.append(final_dict3)
         
 """
-# Cross Chain Bridge Volume Metrics 
-Welcome to our on-chain analysis dashboard! In this dashboard, you can view the weekly transfer volume of assets on the cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps. Additionally, you can see the breakdown of each bridge's weekly transfer volume by the chain where the bridge originated.
-"""
+# Cross Chain Bridge User Metrics 
+Welcome to our on-chain analysis dashboard! In this dashboard, you can view the weekly users of the cross-chain bridges Hyphen, Hop, Stargate, Across, and Synaps. Additionally, you can see the breakdown of each bridge's weekly transfer volume by the chain where the bridge originated. In this analysis, a user is defined as a wallet. If a person uses a bridge from multiple chains, they will get double-counted."""
 
 create_premade_layout('2d-layout-1', final_data_list1)
 """
 ### Description  
-The graphs above shows the weekly transfer volume USD of assets on the cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
+The graphs above shows the weekly users of cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
 """
 
 create_premade_layout('pie-layout-1', final_data_list3)
