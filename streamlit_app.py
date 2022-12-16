@@ -234,7 +234,7 @@ for x in restructure_group_dict.keys():
 final_data_list1 = sorted(final_data_list1, key=lambda  x:(x['ASSET'], x['DAY']), reverse=True) 
 ## make diffrent graph 
 
-
+create_premade_layout('2d-layout-1', final_data_list1)
 
 
 
