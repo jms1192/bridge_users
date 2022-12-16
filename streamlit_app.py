@@ -152,16 +152,15 @@ def sort_flipside_api(link, bridge, type, chain):
         for x in data:
             
                 ##data if 
-                #if 'OUT_VOLUME' in x:
-                #    amount = x['OUT_VOLUME']
-                #if 'AMT_OUT' in x:
-                #    amount = x['AMT_OUT']
+                if 'USERS' in x:
+                    amount = x['USERS']
+                if 'USER' in x:
+                    amount = x['USER']
                 #if 'VOLUME' in x:
                 #    amount = x['VOLUME']
                 #if 'VOL_USD_OUT' in x:
                 #    amount = x['VOL_USD_OUT']
-                print(x)
-                clean_dict = {'DAY':x['DAY'], 'BRIDGE':bridge, 'CHAIN':chain, 'VOLUME':x['USERS']}
+                clean_dict = {'DAY':x['DAY'], 'BRIDGE':bridge, 'CHAIN':chain, 'VOLUME':amount}
                 data_list.append(clean_dict)
 
         return data_list
@@ -172,21 +171,21 @@ volume_api_list = [
     {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/ec6ca210-d16d-4996-8d4d-5e673113ced6/data/latest', 'Bridge':'Stargate', 'Chain':'Optimism'},
     {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/3ca2b8cc-9000-4757-9296-ec78f004127c/data/latest', 'Bridge':'Stargate', 'Chain':'Ethereum'},
     {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/3ca2b8cc-9000-4757-9296-ec78f004127c/data/latest', 'Bridge':'Stargate', 'Chain':'Polygon'},
-    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5168e3d4-3b12-4808-b6e9-34cdf83d7123/data/latest', 'Bridge':'Stargate', 'Chain':'Avalanche'}
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5168e3d4-3b12-4808-b6e9-34cdf83d7123/data/latest', 'Bridge':'Stargate', 'Chain':'Avalanche'},
 
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/6434d3e9-8b87-4e74-9897-2c1eeb0d98a2/data/latest', 'Bridge':'Hop', 'Chain':'Optimism'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/28afb7ab-1233-4a14-b585-5cdb95de8f13/data/latest', 'Bridge':'Hop', 'Chain':'Ethereum'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5153b9b4-2f3b-4ebc-a427-bebcab17dce5/data/latest', 'Bridge':'Hop', 'Chain':'Polygon'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/6434d3e9-8b87-4e74-9897-2c1eeb0d98a2/data/latest', 'Bridge':'Hop', 'Chain':'Optimism'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/28afb7ab-1233-4a14-b585-5cdb95de8f13/data/latest', 'Bridge':'Hop', 'Chain':'Ethereum'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5153b9b4-2f3b-4ebc-a427-bebcab17dce5/data/latest', 'Bridge':'Hop', 'Chain':'Polygon'},
     #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/29177db5-4586-431d-b79f-1ed26733f8be/data/latest', 'Bridge':'Hop', 'Chain':'Avalanche'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/35c12ff9-e958-4e15-9675-0d655aae0303/data/latest', 'Bridge':'Hop', 'Chain':'Arbitrum'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/46c97449-588d-4584-9bd0-0f6e9cc572c7/data/latest', 'Bridge':'Hop', 'Chain':'Gnosis'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/35c12ff9-e958-4e15-9675-0d655aae0303/data/latest', 'Bridge':'Hop', 'Chain':'Arbitrum'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/46c97449-588d-4584-9bd0-0f6e9cc572c7/data/latest', 'Bridge':'Hop', 'Chain':'Gnosis'},
 
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/65a56a90-a54a-4624-b530-3d023a062db3/data/latest', 'Bridge':'Hyphen', 'Chain':'Optimism'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/a5ffae8b-a01d-4ef1-8ff3-0001833f4f20/data/latest', 'Bridge':'Hyphen', 'Chain':'Ethereum'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/0f7b41eb-2190-4f27-92b8-f0f92690cf86/data/latest', 'Bridge':'Hyphen', 'Chain':'Polygon'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/ba6fe0cf-0dbd-45e8-825a-86d94d367350/data/latest', 'Bridge':'Hyphen', 'Chain':'Avalanche'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/617d10fc-1b43-4e05-9298-832ebebf2884/data/latest', 'Bridge':'Hyphen', 'Chain':'Arbitrum'},
-    ##{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/46c97449-588d-4584-9bd0-0f6e9cc572c7/data/latest', 'Bridge':'Hyphen', 'Chain':'Gnosis'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/65a56a90-a54a-4624-b530-3d023a062db3/data/latest', 'Bridge':'Hyphen', 'Chain':'Optimism'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5650044b-e534-460f-8707-deabae1be9df/data/latest', 'Bridge':'Hyphen', 'Chain':'Ethereum'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/0f7b41eb-2190-4f27-92b8-f0f92690cf86/data/latest', 'Bridge':'Hyphen', 'Chain':'Polygon'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/119f6358-60ee-4407-b094-7302696a2c3e/data/latest', 'Bridge':'Hyphen', 'Chain':'Avalanche'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/b4cb6f97-023d-4185-92d8-8b624aa083cb/data/latest', 'Bridge':'Hyphen', 'Chain':'Arbitrum'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/4d6a502c-811c-4f60-8510-84f268c5c3c9/data/latest', 'Bridge':'Hyphen', 'Chain':'BSC'}
 
     #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/6454ca7c-ae9c-417f-b04f-94b93a2037ab/data/latest', 'Bridge':'Synapse', 'Chain':'Optimism'},
     #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/17c9a813-3852-4763-b170-663ad644d009/data/latest', 'Bridge':'Synapse', 'Chain':'Ethereum'},
@@ -209,7 +208,7 @@ for api in volume_api_list:
         full_volume_list.append(x)
 
 
-print(full_volume_list)
+
 
 restructure_group_dict = {}
 final_data_list1 = []
@@ -236,9 +235,6 @@ final_data_list1 = sorted(final_data_list1, key=lambda  x:(x['ASSET'], x['DAY'])
 ## make diffrent graph 
 
 
-print(final_data_list1)
-
-create_premade_layout('2d-layout-1', final_data_list1)
 
 
 
