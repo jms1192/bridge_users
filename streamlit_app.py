@@ -238,6 +238,6 @@ create_premade_layout('2d-layout-1', final_data_list1)
 
 #create_premade_layout('pie-layout-1', final_data_list1)
 
-create_premade_layout('pie-layout-1', final_dict2)
+create_premade_layout('pie-layout-1', final_data_list2)
 
 
