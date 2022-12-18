@@ -262,7 +262,7 @@ Welcome to our on-chain analysis dashboard! In this dashboard, you can view the 
 create_premade_layout('2d-layout-1', final_data_list1)
 """
 ### Description  
-The graphs above shows the weekly users of cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
+The graphs above shows the weekly and weekly average users of cross chain bridges Hyphen, Hop, Stargate, Across, and Synaps
 """
 
 create_premade_layout('pie-layout-1', final_data_list3)
