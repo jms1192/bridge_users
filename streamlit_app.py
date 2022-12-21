@@ -192,12 +192,12 @@ volume_api_list = [
     {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/f48dfb62-f170-4e90-b7ba-f67c53893be0/data/latest', 'Bridge':'Synapse', 'Chain':'Polygon'},
     {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/e01a1cb8-c265-4b00-bdd6-50c52886862a/data/latest', 'Bridge':'Synapse', 'Chain':'Avalanche'},
     {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/1f68ee80-0c70-4a42-ac06-813f3b3947b2/data/latest', 'Bridge':'Synapse', 'Chain':'Arbitrum'},
-    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5133379d-2864-46c8-b675-7c6b3ded7ca1/data/latest', 'Bridge':'Synapse', 'Chain':'BSC'}
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/5133379d-2864-46c8-b675-7c6b3ded7ca1/data/latest', 'Bridge':'Synapse', 'Chain':'BSC'},
 
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/d70c08e6-6ef0-4d4b-92df-5f47c9e23765/data/latest', 'Bridge':'Across', 'Chain':'Optimism'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/33f8cfca-047b-4fc4-bc6d-1c300f76e6ad/data/latest', 'Bridge':'Across', 'Chain':'Ethereum'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/a2df7f86-560a-4d3a-9ab9-296f553f0fdd/data/latest', 'Bridge':'Across', 'Chain':'Polygon'},
-    #{'link':'https://node-api.flipsidecrypto.com/api/v2/queries/0921fa72-ea81-401f-832a-2c4eea1a71d9/data/latest', 'Bridge':'Across', 'Chain':'Arbitrum'}
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/d70c08e6-6ef0-4d4b-92df-5f47c9e23765/data/latest', 'Bridge':'Across', 'Chain':'Optimism'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/33f8cfca-047b-4fc4-bc6d-1c300f76e6ad/data/latest', 'Bridge':'Across', 'Chain':'Ethereum'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/a2df7f86-560a-4d3a-9ab9-296f553f0fdd/data/latest', 'Bridge':'Across', 'Chain':'Polygon'},
+    {'link':'https://node-api.flipsidecrypto.com/api/v2/queries/0921fa72-ea81-401f-832a-2c4eea1a71d9/data/latest', 'Bridge':'Across', 'Chain':'Arbitrum'}
 ]
 
 full_volume_list = []
