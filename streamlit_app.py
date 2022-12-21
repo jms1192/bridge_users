@@ -158,8 +158,8 @@ def sort_flipside_api(link, bridge, type, chain):
                     amount = x['USER']
                 if 'TOTAL_UNIQUE_USERS' in x:
                     amount = x['TOTAL_UNIQUE_USERS']
-                #if 'VOL_USD_OUT' in x:
-                #    amount = x['VOL_USD_OUT']
+                if 'NUM_UNIQUE_USERS' in x:
+                    amount = x['NUM_UNIQUE_USERS']
                 clean_dict = {'DAY':x['DAY'], 'BRIDGE':bridge, 'CHAIN':chain, 'VOLUME':amount}
                 data_list.append(clean_dict)
 
